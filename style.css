@@ -1,0 +1,141 @@
+
+html, body {
+    text-shadow: 
+        -1px -1px 0 #fff,  
+        px -1px 0 #fff,
+        -1px  1px 0 #fff,
+        1px  1px 0 #fff;
+    height: 100%; 
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    background-image: url('https://source.unsplash.com/random/1920x1080'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #0c0c0c; 
+}
+
+#location, #weather {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #34495E;
+    text-shadow: 1px 1px 2px white; 
+    animation: fadeIn 2s; 
+}
+
+.temperature, .weather-detail, .wind-speed, .area-code, .code {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 4px;
+    background-color: #D0D3D4;
+    display: inline-block;
+}
+
+/* анимашка */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(5px); 
+}
+
+.code, .temperature, .wind-speed {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 4px;
+    background-color: #D0D3D4;
+    display: inline-block;
+}
+
+.header {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.85); 
+    color: rgb(17, 14, 14);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+.weather-detail {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ECF0F1;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.footer {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgb(245, 243, 243);
+    text-align: center;
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.content {
+    padding: 60px 10px 60px; 
+    text-align: center; 
+}
+
+.title
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+
+.weather-card {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    text-align: left;
+}
+
+.weather-card h3 {
+    margin-top: 0;
+    color: #222; 
+}
+
+.weather-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #444; 
+}

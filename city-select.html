@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Выберите город</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <nav>
+        <ul>
+            <li><a href="index.html">Начальная страница</a></li>
+            <li><a href="weather.html">Карта погоды</a></li>
+            <li><a href="city-select.html">Выбор погоды по городам</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="content">
+    <h1>Выберите город</h1>
+    <form id="city-form">
+        <select id="city-select">
+            <option value="Paris" data-lat="48.8566" data-lon="2.3522">Paris (France)</option>
+            <option value="London" data-lat="51.5074" data-lon="-0.1278">London (UK)</option>
+            <option value="Rome" data-lat="41.9028" data-lon="12.4964">Rome (Italy)</option>
+            <option value="Berlin" data-lat="52.5200" data-lon="13.4050">Berlin (Germany)</option>
+            <option value="Warsaw" data-lat="52.2297" data-lon="21.0122">Warsaw (Poland)</option>
+        </select>
+        <input type="submit" value="Get Weather">
+    </form>
+    <div id="weather-result">
+        
+    </div>
+</div>
+
+<div class="footer">
+    <p>Copyright &copy; Все права мои</p>
+</div>
+
+<script src="city-select-script.js"></script>
+</body>
+</html>
+
